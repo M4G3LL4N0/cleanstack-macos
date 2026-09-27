@@ -2,7 +2,5 @@
   "name": "cleanstack-macos-website",
   "private": true,
   "description": "Public site for the CleanStack macOS disk tool",
-  "scripts": {
-    "build": "mkdir -p dist && cp index.html styles.css favicon.svg dist/"
-  }
+  "scripts": {}
 }
