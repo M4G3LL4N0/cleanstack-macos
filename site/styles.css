@@ -1,0 +1,96 @@
+:root {
+  --bg: #f4f1ea;
+  --ink: #1c1a16;
+  --muted: #5c574c;
+  --line: #d9d2c4;
+  --accent: #2f6f4e;
+  --card: #fffdf8;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: "SF Pro Text", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.mast {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.mark { margin: 0; font-weight: 650; letter-spacing: 0.04em; }
+.mark span { color: var(--muted); font-weight: 500; }
+
+.cta {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #f4f1ea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.cta-primary { min-width: 12rem; }
+.ghost {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 1rem;
+  color: var(--ink);
+}
+
+main { max-width: 840px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+.hero { padding: 1.5rem 0 2rem; }
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.08; margin: 0.6rem 0 0; }
+h2 { font-size: 1.4rem; margin: 0 0 0.8rem; }
+.lede { max-width: 38rem; color: var(--muted); font-size: 1.05rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.4rem; }
+
+.board, .ops {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+.scan-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.scan-list li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+.scan-list span { color: var(--muted); font-size: 0.95rem; }
+.ops ol { padding-left: 1.2rem; }
+.note { color: var(--muted); font-size: 0.92rem; }
+
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 420px) {
+  .mast { align-items: flex-start; flex-direction: column; }
+  h1 { font-size: 2rem; }
+}

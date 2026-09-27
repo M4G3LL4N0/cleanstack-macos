@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CleanStack for Mac — scan, then trash what is actually safe</title>
+    <meta
+      name="description"
+      content="CleanStack for macOS is a menu-bar disk tool. It scans Xcode DerivedData, caches, diagnostic logs, old large Downloads, and stale project folders, then moves safe items to Trash."
+    />
+    <meta name="theme-color" content="#f4f1ea" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="CleanStack for Mac" />
+    <meta
+      property="og:description"
+      content="A menu-bar scanner that lists reclaimable Mac disk waste and trashes only the safe caches."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="mast">
+      <p class="mark">CleanStack <span>macOS</span></p>
+      <a class="cta" href="mailto:?subject=CleanStack%20for%20Mac%20build%20request&body=I%20want%20the%20CleanStack%20for%20macOS%20build%20and%20a%20walkthrough%20of%20what%20it%20scans.">
+        Request the Mac build
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="kicker">Menu-bar disk tool</p>
+        <h1>Scan the Mac. Trash the safe caches. Leave the rest for you.</h1>
+        <p class="lede">
+          CleanStack for macOS is a Swift menu-bar app with a dashboard. It
+          measures reclaimable bytes, lists candidates, and can quick-clean
+          only items marked safe. It is not CleanStack OS, the broader
+          workstation-health concept.
+        </p>
+        <div class="actions">
+          <a class="cta cta-primary" href="mailto:?subject=CleanStack%20for%20Mac%20build%20request&body=I%20want%20the%20CleanStack%20for%20macOS%20build%20and%20a%20walkthrough%20of%20what%20it%20scans.">
+            Request the Mac build
+          </a>
+          <a class="ghost" href="#scans">See what it scans</a>
+        </div>
+      </section>
+
+      <section id="scans" class="board" aria-label="What the scanner looks at">
+        <p class="kicker">From the scanner source</p>
+        <h2>What a scan actually enumerates</h2>
+        <ul class="scan-list">
+          <li>
+            <strong>Derived Data</strong>
+            <span>~/Library/Developer/Xcode/DerivedData — marked safe for quick clean</span>
+          </li>
+          <li>
+            <strong>Diagnostic reports</strong>
+            <span>~/Library/Logs/DiagnosticReports — marked safe for quick clean</span>
+          </li>
+          <li>
+            <strong>User caches</strong>
+            <span>~/Library/Caches — marked safe for quick clean</span>
+          </li>
+          <li>
+            <strong>Old large downloads</strong>
+            <span>Files in Downloads older than 21 days and at least 250 MB</span>
+          </li>
+          <li>
+            <strong>Stale project weight</strong>
+            <span>Old large folders the scanner flags for review, not auto-trash</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="ops">
+        <h2>What the dashboard can do</h2>
+        <ol>
+          <li>Scan now and show candidate count plus recoverable bytes</li>
+          <li>Quick-clean only the safe-cache set (moves items to Trash)</li>
+          <li>Trash selected rows after you choose them</li>
+          <li>Optional auto-scan interval from 15 minutes to 24 hours</li>
+        </ol>
+        <p class="note">
+          The app runs as a menu-bar extra. Nothing here claims how many
+          gigabytes your machine will recover.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      CleanStack for macOS · local Swift disk tool · not CleanStack OS
+    </footer>
+  </body>
+</html>

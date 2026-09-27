@@ -1,0 +1,6 @@
+.env
+.env.local
+.build/
+.swiftpm/
+*.xcuserstate
+.DS_Store
