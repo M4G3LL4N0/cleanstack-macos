@@ -2,5 +2,7 @@
   "name": "cleanstack-macos-website",
   "private": true,
   "description": "Public site for the CleanStack macOS disk tool",
-  "scripts": {}
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'); fs.mkdirSync('public',{recursive:true}); for (const f of fs.readdirSync('.')) { if (['public','node_modules','.git','.vercel'].includes(f)) continue; if (fs.statSync(f).isFile()) fs.copyFileSync(f,'public/'+f); }\""
+  }
 }
