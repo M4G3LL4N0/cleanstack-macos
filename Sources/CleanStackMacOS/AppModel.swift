@@ -89,7 +89,9 @@ final class AppModel: ObservableObject {
         }
 
         let cleaned = cleaner.quickClean(safe)
-        statusMessage = "Quick cleaned \(cleaned) safe item(s)"
+        statusMessage = cleaned == 0
+            ? "No safe item could be moved to Trash."
+            : "Quick cleaned \(cleaned) safe item(s)"
 
         Task {
             await scanNow()
