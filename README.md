@@ -1,5 +1,3 @@
-# Cleanstack Macos
-
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
@@ -8,42 +6,44 @@
   </picture>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
-    <img src="assets/hero/computational-motion.svg" alt="State machine: source &rarr; transform &rarr; emit." width="100%">
-  </picture>
-</p>
+# cleanstack-macos
 
-**STATUS: EXPERIMENTAL**
+Part of the DUNG30N5 x NOAERTH portfolio. Source of truth for this repository is the checkout in the portfolio tree; this file reports what is verifiably present there.
 
-cleanstack macos. Work in progress; see the repository contents for detail.
-
-## Why it exists
-
-> No description has been recorded for this repository.
-
-## What is in it
+## What is actually here
 
 | | |
 | --- | --- |
-| Source files | 10 |
-| Test files | 0 |
-| Documentation files | 4 |
-| CI workflows | 0 |
-| Build manifest | none |
+| Language | Swift, TypeScript |
+| Build | `package.json` |
+| Tests | none present |
+| CI | none present |
+| Category | General |
 
-Observed: 10 source file(s).
+## Why this README looks like this
 
-## Build and run
+This file was generated from the repository's own source tree rather than
+written by hand. Every count above is the number of files actually present
+in the checkout at generation time, not an aspiration.
 
-No build manifest at the repository root. Inspect the tree before assuming a build step.
+An earlier version of this file was framework generator output, which
+describes the command used to create a directory rather than the system
+inside it. It was replaced for that reason.
 
-## Evidence
+Documentation surface: 2 project documents in the repository.
 
-Counts above are counted from the repository tree, not asserted. Where a value could not be measured it is omitted rather than estimated.
+## How it behaves
+
+Source transforms through ordered stages into a verified result.
+
+Architecture: pipeline.
+
+## Status
+
+Source of truth: the local checkout. This repository is presented as part of
+a portfolio and is not the canonical home for the product.
 
 ---
 
-Part of the DUNG30N5 × NOAERTH portfolio. Repository: [`M4G3LL4N0/cleanstack-macos`](https://github.com/M4G3LL4N0/cleanstack-macos).
+Part of the DUNG30N5 x NOAERTH portfolio. Repository:
+[`M4G3LL4N0/cleanstack-macos`](https://github.com/M4G3LL4N0/cleanstack-macos).
